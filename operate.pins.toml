@@ -1,0 +1,13 @@
+[pi]
+cli_package = "@mariozechner/pi-coding-agent"
+version = "0.67.4"
+
+[pi_packages]
+pi_autoresearch = "git:github.com/davebcn87/pi-autoresearch@5a29db080131449edc6d25a6b351b12879063366"
+
+[skill_repos.pi_skills]
+url = "https://github.com/badlogic/pi-skills"
+commit = "75d32a382b0c8aafce356d68e17d2dc94c0c953b"
+
+[skill_dependencies]
+".pi/skills/_external/pi-skills/brave-search" = ["npm", "install"]

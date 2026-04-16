@@ -1,6 +1,22 @@
 # python, uv, ruff, etc.
 __pycache__/
 _ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.venv/
+*.pyc
 
 # envs 
 .env
+
+# local orchestration/runtime state
+.omx/
+.pi/git/
+.pi/npm/
+.pi/sessions/
+.pi/skills/_external/
+
+# private operate inputs and generated outputs
+config/*.local.toml
+reports/
+logs/
