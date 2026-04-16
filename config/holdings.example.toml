@@ -1,0 +1,12 @@
+[[holding]]
+symbol = "AAPL"
+name = "Apple Inc."
+asset_class = "equity"
+market = "US"
+notes = "Long-term position"
+
+[[holding]]
+symbol = "BTC"
+name = "Bitcoin"
+asset_class = "crypto"
+notes = "Macro/liquidity sensitive"

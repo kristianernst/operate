@@ -1,0 +1,12 @@
+[pi]
+provider = "openai"
+model = "openai/gpt-5.4"
+mode = "json"
+timeout_seconds = 1800
+
+[report.market]
+timezone = "Europe/Copenhagen"
+schedule = "30 7 * * 1-5"
+output_dir = "reports/market"
+log_dir = "logs/market"
+skill = "market-report"

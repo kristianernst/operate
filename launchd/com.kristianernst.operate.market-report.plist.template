@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.kristianernst.operate.market-report</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/env</string>
+    <string>uv</string>
+    <string>run</string>
+    <string>operate</string>
+    <string>report</string>
+    <string>market</string>
+    <string>--config</string>
+    <string>__CONFIG_PATH__</string>
+    <string>--holdings</string>
+    <string>__HOLDINGS_PATH__</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>__REPO_ROOT__</string>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer><key>Weekday</key><integer>1</integer></dict>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer><key>Weekday</key><integer>2</integer></dict>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer><key>Weekday</key><integer>3</integer></dict>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer><key>Weekday</key><integer>4</integer></dict>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer><key>Weekday</key><integer>5</integer></dict>
+  </array>
+  <key>StandardOutPath</key>
+  <string>__REPO_ROOT__/logs/launchd/market-report.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__REPO_ROOT__/logs/launchd/market-report.err.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin</string>
+  </dict>
+</dict>
+</plist>
