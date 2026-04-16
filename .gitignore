@@ -1,0 +1,6 @@
+# python, uv, ruff, etc.
+__pycache__/
+_ruff_cache/
+
+# envs 
+.env
